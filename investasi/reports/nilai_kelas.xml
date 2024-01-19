@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ <!-- <template id="report_nilai_kelass">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <h2>nilai kelas</h2>
+            </t>
+        </t>
+    </template> -->
+
+    <template id="report_nilai">
+        <t t-call="web.external_layout">
+        <!-- <t t-call="web.html_container"> -->
+<!--         
+            <t t-foreach="docs" t-as="doc">  
+                <h2>tes print</h2>
+                <t t-esc="doc.name"/>
+               tahun ajaran: <t t-esc="doc.tahun_ajaran"/>
+               nama: <t t-esc="doc.wali_kelas"/>
+               </t> -->
+            <!-- </t> -->
+        </t>
+    </template>
+</odoo>
