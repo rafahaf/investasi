@@ -1,9 +1,0 @@
-<record id="view_product_search" model="ir.ui.view">
-        <field name="name">product.search</field>
-        <field name="model">product.details</field>
-        <field name="arch" type="xml">
-            <search>
-                <field name="product_name"/>
-            </search>
-            </field>
-</record>
