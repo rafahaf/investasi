@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="report_nilai_kelas"
+        string="report nilai kelas"
+        model="kelas.details"
+        report_type="qweb-pdf"
+        name="electronics_shop.report_nilai"
+        file="electronics_shop.report_nilai"/>
+
+    <report
+        id="report_nilai_kelas_xlx"
+        string="report nilai kelas excel"
+        model="kelas.details"
+        report_type="xlsx"
+        name="electronics_shop.report_nilai_xls"
+        file="electronics_shop.report_nilai_xls"/>
+</odoo>

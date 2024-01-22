@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<odoo>
+        <record id="view_tes_wizard_form" model="ir.ui.view">
+            <field name="name">tes.wizard.form</field>
+            <field name="model">tes.wizard</field>
+            <field name="arch" type="xml">
+                <form string="tes wizard">
+                   <h2>apakah kamu yakin?</h2>
+                    <group>
+                        <field name="tes_id"/>
+                        <!-- <field name="product_id"/> -->
+                    </group>
+                    <footer>
+                        <button name="create_wizard" string="Ya" class="btn-primary" type="object" data-hotkey="z"/>
+                       <button string="Tidak" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_tes_wizard" model="ir.actions.act_window">
+            <field name="name">Tes Wizard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">tes.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_tes_wizard_form"/>
+            <field name="target">new</field>
+            
+        </record>
+</odoo>
